@@ -1,0 +1,107 @@
+.screen {
+  height: 100vh;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  max-width: 620px;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+
+.title {
+  font-size: 58px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.paragraph {
+  font-size: 24px;
+}
+
+@media (width < 640px) {
+  .text {
+    max-width: 345px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+.glowBtn {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glowBtn:before {
+  content: "";
+  background: linear-gradient(45deg, #ef00da, #ef00da80, #ef00da60, #ef00da, #ef00da80, #ef00da60);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glowBtn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background: #000000da;
+  transition: 0.4s;
+}
+
+.glowBtn:hover:after {
+  background-color: #000000c0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.goToBenefits {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s;
+  font-size: 18px;
+}

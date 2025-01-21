@@ -1,0 +1,77 @@
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.subtitle {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.nameInputBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.nameInputBox > h1 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.nameInputBox > input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+  color: #000;
+  width: 280px;
+}
+
+.nameInputBox > input:focus {
+  border-color: #fff;
+}
+
+.nameInputBox > button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ef00da;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nameInputBox > button:disabled {
+  cursor: not-allowed;
+}
+
+.nameInputBox > button:hover:not(:disabled) {
+  background-color: #c100b0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+}

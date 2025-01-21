@@ -1,0 +1,31 @@
+.screen {
+  padding-top: 90px;
+  background-color: #ffffff02;
+  padding-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.benefitsBox {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ff00eaaa, #39003250);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #222;
+  & > li {
+    margin-bottom: 5px;
+    list-style: decimal-leading-zero;
+    margin-left: 20px;
+  }
+}

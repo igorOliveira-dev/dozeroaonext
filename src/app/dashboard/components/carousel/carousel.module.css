@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-block: 40px;
+  max-width: 800px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 70%;
+}
+
+.carouselItem {
+  text-align: center;
+  transition: 0.4s;
+  width: 220px;
+  height: 420px;
+  align-items: center;
+  &:hover {
+    scale: 1.05;
+  }
+
+  & > h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  & > .moduleImg {
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #ffffff20;
+  }
+}
+
+.carouselItemsContainer {
+  display: flex;
+  transition: 0.4s;
+}
+
+.navButton {
+  z-index: 1;
+  font-size: 30px;
+}
+
+@media (width < 760px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (width < 620px) {
+  .container {
+    max-width: 430px;
+  }
+}

@@ -1,0 +1,99 @@
+.screen {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 10px;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.returnArrow {
+  padding: 10px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #ffffff15;
+  }
+}
+
+.videoContainer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  width: 100%;
+  padding-inline: 10px;
+}
+
+.videoLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.videoItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  gap: 15px;
+  background-color: #ffffff05;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff50;
+}
+
+.videoItem:hover {
+  background-color: #ffffff15;
+}
+
+.videoTitle {
+  font-size: 18px;
+}
+
+@media (max-width: 1050px) {
+  .videoContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .iframeContainer {
+    padding-top: 56.25%;
+    width: 100%;
+  }
+
+  .videoLinks {
+    width: 100%;
+  }
+}
+
+.noVideoParagraph {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+.activeVideoTitle {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.activeVideoDesc {
+  padding-block: 10px;
+}
+
+.watched {
+  opacity: 0.6;
+}
+
+.watchedLabel {
+  font-size: 0.9rem;
+  color: green;
+  margin-left: 5px;
+  font-weight: bold;
+}
