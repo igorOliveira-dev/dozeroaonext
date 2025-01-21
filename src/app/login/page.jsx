@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { auth, db } from "../firebase";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,10 +14,22 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      const userDocRef = doc(db, "users", user.uid);
+      const userSnapshot = await getDoc(userDocRef);
+
+      if (!userSnapshot.exists()) {
+        await setDoc(userDocRef, {
+          email: user.email,
+          createdAt: new Date().toISOString(),
+        });
+      }
       window.location.href = "/dashboard";
     } catch (err) {
-      setError("Sua senha está errada ou você não comprou o curso com esse email");
+      console.error("Erro no login:", err);
+      setError("Sua senha está errada ou você não comprou o curso com esse email.");
     }
   };
 

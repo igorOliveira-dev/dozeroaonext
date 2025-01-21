@@ -1,0 +1,369 @@
+[debug] [2025-01-21T16:59:18.053Z] ----------------------------------------------------------------------
+[debug] [2025-01-21T16:59:18.056Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\igorv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-01-21T16:59:18.057Z] CLI Version:   13.29.1
+[debug] [2025-01-21T16:59:18.057Z] Platform:      win32
+[debug] [2025-01-21T16:59:18.057Z] Node Version:  v20.10.0
+[debug] [2025-01-21T16:59:18.057Z] Time:          Tue Jan 21 2025 13:59:18 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-01-21T16:59:18.057Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-21T16:59:18.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-21T16:59:18.201Z] > authorizing via signed-in user (dozeroaonext@gmail.com)
+[info] i  emulators: Starting emulators: functions, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, extensions"}}
+[debug] [2025-01-21T16:59:18.207Z] Checked if tokens are valid: false, expires at: 1737475210001
+[debug] [2025-01-21T16:59:18.207Z] Checked if tokens are valid: false, expires at: 1737475210001
+[debug] [2025-01-21T16:59:18.208Z] > refreshing access token with scopes: []
+[debug] [2025-01-21T16:59:18.210Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-21T16:59:18.210Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-21T16:59:18.440Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-01-21T16:59:18.440Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-21T16:59:18.453Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 [none]
+[debug] [2025-01-21T16:59:19.421Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 200
+[debug] [2025-01-21T16:59:19.421Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 {"projectNumber":"693449067481","projectId":"dozeroaonext-cc0f9","lifecycleState":"ACTIVE","name":"dozeroaonext","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-01-05T19:03:38.404077Z"}
+[debug] [2025-01-21T16:59:19.437Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T16:59:19.437Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-01-21T16:59:19.444Z] [hub] writing locator at C:\Users\igorv\AppData\Local\Temp\hub-dozeroaonext-cc0f9.json
+[debug] [2025-01-21T16:59:19.456Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-01-21T16:59:19.466Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T16:59:19.466Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T16:59:19.466Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T16:59:19.466Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-01-21T16:59:19.472Z] defaultcredentials: writing to file C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json
+[debug] [2025-01-21T16:59:19.475Z] Setting GAC to C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\igorv\\AppData\\Roaming\\firebase\\dozeroaonext_gmail_com_application_default_credentials.json"}}
+[debug] [2025-01-21T16:59:19.476Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T16:59:19.476Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T16:59:19.476Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig [none]
+[debug] [2025-01-21T16:59:19.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig 200
+[debug] [2025-01-21T16:59:19.960Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig {"projectId":"dozeroaonext-cc0f9","storageBucket":"dozeroaonext-cc0f9.firebasestorage.app"}
+[debug] [2025-01-21T16:59:20.029Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\vs-code\zeroaonext\plataforma\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\vs-code\\zeroaonext\\plataforma\\functions\" for Cloud Functions..."}}
+[debug] [2025-01-21T16:59:20.058Z] Validating nodejs source
+[debug] [2025-01-21T16:59:21.824Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-01-21T16:59:21.824Z] Building nodejs source
+[debug] [2025-01-21T16:59:21.825Z] Failed to find version of module node: reached end of search path C:\vs-code\zeroaonext\plataforma\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2025-01-21T16:59:21.828Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-21T16:59:21.834Z] Found firebase-functions binary at 'C:\vs-code\zeroaonext\plataforma\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8237
+
+[debug] [2025-01-21T16:59:22.918Z] Got response from /__/functions.yaml {"endpoints":{"createUserOnPurchase":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"createUserOnPurchase"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-01-21T16:59:27.984Z] defaultcredentials: writing to file C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json
+[debug] [2025-01-21T16:59:27.987Z] Setting GAC to C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\igorv\\AppData\\Roaming\\firebase\\dozeroaonext_gmail_com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: createUserOnPurchase. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUserOnPurchase."}}
+[info] +  functions[us-central1-createUserOnPurchase]: http function initialized (http://127.0.0.1:5001/dozeroaonext-cc0f9/us-central1/createUserOnPurchase). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/dozeroaonext-cc0f9/us-central1/createUserOnPurchase)."}}
+[debug] [2025-01-21T16:59:27.999Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-01-21T16:59:37.571Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T16:59:37.570Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T16:59:37.571Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T16:59:37.570Z"],"workRunningCount":1}
+[debug] [2025-01-21T16:59:37.571Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T16:59:37.574Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T16:59:37.575Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T16:59:37.594Z] [worker-pool] addWorker(us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-createUserOnPurchase)"}}
+[debug] [2025-01-21T16:59:37.595Z] [worker-pool] Adding worker with key us-central1-createUserOnPurchase, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-createUserOnPurchase, total=1"}}
+[debug] [2025-01-21T16:59:38.972Z] [runtime-status] [27192] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:38.973Z] [runtime-status] [27192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:38.973Z] [runtime-status] [27192] Found local functions config: C:\vs-code\zeroaonext\plataforma\functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Found local functions config: C:\\vs-code\\zeroaonext\\plataforma\\functions/.runtimeconfig.json"}}
+[debug] [2025-01-21T16:59:38.974Z] [runtime-status] [27192] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-01-21T16:59:38.975Z] [runtime-status] [27192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:39.229Z] [runtime-status] [27192] Checked functions.config() {"config":{"email":{"user":"dozeroaonext@gmail.com","pass":"ggiydgbeyuhcbkvi"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Checked functions.config() {\"config\":{\"email\":{\"user\":\"dozeroaonext@gmail.com\",\"pass\":\"ggiydgbeyuhcbkvi\"}}}"}}
+[debug] [2025-01-21T16:59:39.230Z] [runtime-status] [27192] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-01-21T16:59:39.230Z] [runtime-status] [27192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:39.238Z] [runtime-status] [27192] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:39.240Z] [runtime-status] [27192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T16:59:39.241Z] [runtime-status] [27192] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-01-21T16:59:39.270Z] [runtime-status] [27192] initializeApp(DEFAULT) {"storageBucket":"dozeroaonext-cc0f9.firebasestorage.app","projectId":"dozeroaonext-cc0f9"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] initializeApp(DEFAULT) {\"storageBucket\":\"dozeroaonext-cc0f9.firebasestorage.app\",\"projectId\":\"dozeroaonext-cc0f9\"}"}}
+[debug] [2025-01-21T16:59:39.283Z] [runtime-status] [27192] Functions runtime initialized. {"cwd":"C:\\vs-code\\zeroaonext\\plataforma\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Functions runtime initialized. {\"cwd\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2025-01-21T16:59:39.283Z] [runtime-status] [27192] Listening to port: \\?\pipe\fire_emu_84fa8f3783649cee {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [27192] Listening to port: \\\\?\\pipe\\fire_emu_84fa8f3783649cee"}}
+[debug] [2025-01-21T16:59:39.320Z] [worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE"}}
+[debug] [2025-01-21T16:59:39.320Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T16:59:39.321Z] [worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: BUSY"}}
+[warn] !  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[debug] [2025-01-21T16:59:43.603Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 4282.8714ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 4282.8714ms"}}
+[debug] [2025-01-21T16:59:43.606Z] [worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE"}}
+[debug] [2025-01-21T16:59:43.608Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T16:59:43.608Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:00:15.677Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:00:15.677Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:00:15.677Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:00:15.677Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:00:15.677Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:00:15.680Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:00:15.681Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:00:15.681Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:00:15.682Z] [worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: BUSY"}}
+[debug] [2025-01-21T17:00:19.886Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 4204.5162ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 4204.5162ms"}}
+[debug] [2025-01-21T17:00:19.887Z] [worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-2b217383-0ff8-4f4e-ac35-081911564c08]: IDLE"}}
+[debug] [2025-01-21T17:00:19.888Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:00:19.888Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:00:19.888Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:04:35.594Z] ----------------------------------------------------------------------
+[debug] [2025-01-21T17:04:35.597Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\igorv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-01-21T17:04:35.598Z] CLI Version:   13.29.1
+[debug] [2025-01-21T17:04:35.598Z] Platform:      win32
+[debug] [2025-01-21T17:04:35.598Z] Node Version:  v20.10.0
+[debug] [2025-01-21T17:04:35.598Z] Time:          Tue Jan 21 2025 14:04:35 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-01-21T17:04:35.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-21T17:04:35.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-21T17:04:35.777Z] > authorizing via signed-in user (dozeroaonext@gmail.com)
+[info] i  emulators: Starting emulators: functions, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, extensions"}}
+[debug] [2025-01-21T17:04:35.782Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T17:04:35.782Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T17:04:35.783Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 [none]
+[debug] [2025-01-21T17:04:36.340Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 200
+[debug] [2025-01-21T17:04:36.341Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/dozeroaonext-cc0f9 {"projectNumber":"693449067481","projectId":"dozeroaonext-cc0f9","lifecycleState":"ACTIVE","name":"dozeroaonext","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-01-05T19:03:38.404077Z"}
+[debug] [2025-01-21T17:04:36.369Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T17:04:36.370Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dozeroaonext-cc0f9. This may result in unexpected behavior. 
+[debug] [2025-01-21T17:04:36.383Z] [hub] writing locator at C:\Users\igorv\AppData\Local\Temp\hub-dozeroaonext-cc0f9.json
+[debug] [2025-01-21T17:04:36.395Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-01-21T17:04:36.402Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T17:04:36.402Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T17:04:36.402Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-21T17:04:36.402Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-01-21T17:04:36.408Z] defaultcredentials: writing to file C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json
+[debug] [2025-01-21T17:04:36.413Z] Setting GAC to C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\igorv\\AppData\\Roaming\\firebase\\dozeroaonext_gmail_com_application_default_credentials.json"}}
+[debug] [2025-01-21T17:04:36.415Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T17:04:36.415Z] Checked if tokens are valid: true, expires at: 1737482357440
+[debug] [2025-01-21T17:04:36.415Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig [none]
+[debug] [2025-01-21T17:04:36.924Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig 200
+[debug] [2025-01-21T17:04:36.925Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dozeroaonext-cc0f9/adminSdkConfig {"projectId":"dozeroaonext-cc0f9","storageBucket":"dozeroaonext-cc0f9.firebasestorage.app"}
+[debug] [2025-01-21T17:04:36.982Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\vs-code\zeroaonext\plataforma\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\vs-code\\zeroaonext\\plataforma\\functions\" for Cloud Functions..."}}
+[debug] [2025-01-21T17:04:37.004Z] Validating nodejs source
+[debug] [2025-01-21T17:04:38.640Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-01-21T17:04:38.641Z] Building nodejs source
+[debug] [2025-01-21T17:04:38.641Z] Failed to find version of module node: reached end of search path C:\vs-code\zeroaonext\plataforma\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2025-01-21T17:04:38.645Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-21T17:04:38.653Z] Found firebase-functions binary at 'C:\vs-code\zeroaonext\plataforma\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8992
+
+[debug] [2025-01-21T17:04:39.493Z] Got response from /__/functions.yaml {"endpoints":{"createUserOnPurchase":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"createUserOnPurchase"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-01-21T17:04:44.558Z] defaultcredentials: writing to file C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json
+[debug] [2025-01-21T17:04:44.560Z] Setting GAC to C:\Users\igorv\AppData\Roaming\firebase\dozeroaonext_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\igorv\\AppData\\Roaming\\firebase\\dozeroaonext_gmail_com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: createUserOnPurchase. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUserOnPurchase."}}
+[info] +  functions[us-central1-createUserOnPurchase]: http function initialized (http://127.0.0.1:5001/dozeroaonext-cc0f9/us-central1/createUserOnPurchase). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/dozeroaonext-cc0f9/us-central1/createUserOnPurchase)."}}
+[debug] [2025-01-21T17:04:44.592Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-01-21T17:05:07.561Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:05:07.561Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:05:07.562Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:05:07.561Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:05:07.562Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:05:07.567Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:05:07.567Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:05:07.587Z] [worker-pool] addWorker(us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-createUserOnPurchase)"}}
+[debug] [2025-01-21T17:05:07.588Z] [worker-pool] Adding worker with key us-central1-createUserOnPurchase, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-createUserOnPurchase, total=1"}}
+[debug] [2025-01-21T17:05:08.844Z] [runtime-status] [3428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:08.846Z] [runtime-status] [3428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:08.846Z] [runtime-status] [3428] Found local functions config: C:\vs-code\zeroaonext\plataforma\functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Found local functions config: C:\\vs-code\\zeroaonext\\plataforma\\functions/.runtimeconfig.json"}}
+[debug] [2025-01-21T17:05:08.847Z] [runtime-status] [3428] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-01-21T17:05:08.848Z] [runtime-status] [3428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:09.205Z] [runtime-status] [3428] Checked functions.config() {"config":{"email":{"user":"dozeroaonext@gmail.com","pass":"ggiydgbeyuhcbkvi"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Checked functions.config() {\"config\":{\"email\":{\"user\":\"dozeroaonext@gmail.com\",\"pass\":\"ggiydgbeyuhcbkvi\"}}}"}}
+[debug] [2025-01-21T17:05:09.206Z] [runtime-status] [3428] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-01-21T17:05:09.206Z] [runtime-status] [3428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:09.212Z] [runtime-status] [3428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:09.214Z] [runtime-status] [3428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.2.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.2.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-01-21T17:05:09.214Z] [runtime-status] [3428] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\vs-code\\zeroaonext\\plataforma\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-01-21T17:05:09.246Z] [runtime-status] [3428] initializeApp(DEFAULT) {"storageBucket":"dozeroaonext-cc0f9.firebasestorage.app","projectId":"dozeroaonext-cc0f9"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] initializeApp(DEFAULT) {\"storageBucket\":\"dozeroaonext-cc0f9.firebasestorage.app\",\"projectId\":\"dozeroaonext-cc0f9\"}"}}
+[debug] [2025-01-21T17:05:09.261Z] [runtime-status] [3428] Functions runtime initialized. {"cwd":"C:\\vs-code\\zeroaonext\\plataforma\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Functions runtime initialized. {\"cwd\":\"C:\\\\vs-code\\\\zeroaonext\\\\plataforma\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2025-01-21T17:05:09.261Z] [runtime-status] [3428] Listening to port: \\?\pipe\fire_emu_229d40fc57894d05 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[runtime-status] [3428] Listening to port: \\\\?\\pipe\\fire_emu_229d40fc57894d05"}}
+[debug] [2025-01-21T17:05:09.358Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:05:09.358Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:05:09.359Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[warn] !  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[debug] [2025-01-21T17:05:14.008Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 4649.429ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 4649.429ms"}}
+[debug] [2025-01-21T17:05:14.010Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:05:14.010Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:05:14.011Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:05:14.011Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:08:59.924Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:08:59.924Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:08:59.925Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:08:59.924Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:08:59.925Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:08:59.928Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:08:59.929Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:08:59.930Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:08:59.931Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:09:03.291Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 3360.1605ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 3360.1605ms"}}
+[debug] [2025-01-21T17:09:03.292Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:09:03.293Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:09:03.293Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:09:03.293Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:12:56.063Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:12:56.063Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:12:56.063Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:12:56.063Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:12:56.063Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:12:56.066Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:12:56.066Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:12:56.066Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:12:56.067Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:13:00.256Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 4189.8491ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 4189.8491ms"}}
+[debug] [2025-01-21T17:13:00.258Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:13:00.258Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:13:00.258Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:13:00.259Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:16:41.932Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:16:41.932Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:16:41.933Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:16:41.932Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:16:41.933Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:16:41.936Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:16:41.937Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:16:41.937Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:16:41.939Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:16:46.822Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 4883.3566ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 4883.3566ms"}}
+[debug] [2025-01-21T17:16:46.823Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:16:46.823Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:16:46.823Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:16:46.823Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:19:44.463Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:19:44.463Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:19:44.463Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:19:44.463Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:19:44.463Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:19:44.467Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:19:44.467Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:19:44.468Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:19:44.469Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:19:47.900Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 3431.2674ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 3431.2674ms"}}
+[debug] [2025-01-21T17:19:47.905Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:19:47.905Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:19:47.906Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:19:47.906Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:20:28.610Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:20:28.610Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:20:28.610Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:20:28.610Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:20:28.610Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:20:28.613Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:20:28.613Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:20:28.613Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:20:28.614Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:20:31.833Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 3218.9764999999998ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 3218.9764999999998ms"}}
+[debug] [2025-01-21T17:20:31.834Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:20:31.834Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:20:31.834Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:20:31.834Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:28:23.483Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:28:23.483Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:28:23.483Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:28:23.483Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:28:23.483Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:28:23.486Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:28:23.486Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:28:23.486Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:28:23.487Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:28:27.016Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 3529.6576999999997ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 3529.6576999999997ms"}}
+[debug] [2025-01-21T17:28:27.020Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:28:27.021Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:28:27.021Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:28:27.021Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:40:18.927Z] [work-queue] {"queuedWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:40:18.926Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-01-21T17:40:18.927Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/dozeroaonext-cc0f9/us-central1/createUserOnPurchase-2025-01-21T17:40:18.926Z"],"workRunningCount":1}
+[debug] [2025-01-21T17:40:18.928Z] Accepted request POST /dozeroaonext-cc0f9/us-central1/createUserOnPurchase --> us-central1-createUserOnPurchase
+[debug] [2025-01-21T17:40:18.932Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-01-21T17:40:18.933Z] [functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dozeroaonext-cc0f9/us-central1/createUserOnPurchase, mapping to path=/"}}
+[debug] [2025-01-21T17:40:18.935Z] [worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-createUserOnPurchase)"}}
+[info] i  functions: Beginning execution of "us-central1-createUserOnPurchase" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Beginning execution of \"us-central1-createUserOnPurchase\""}}
+[debug] [2025-01-21T17:40:18.937Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: BUSY"}}
+[debug] [2025-01-21T17:40:22.821Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-createUserOnPurchase" in 3885.3552ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finished \"us-central1-createUserOnPurchase\" in 3885.3552ms"}}
+[debug] [2025-01-21T17:40:22.823Z] [worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"[worker-us-central1-createUserOnPurchase-0fc4a48f-63af-42f8-8297-c4e4a23c6b50]: IDLE"}}
+[debug] [2025-01-21T17:40:22.824Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-01-21T17:40:22.824Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-createUserOnPurchase"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-01-21T17:40:22.824Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

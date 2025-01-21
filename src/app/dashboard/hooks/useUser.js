@@ -11,19 +11,23 @@ const useUser = () => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (authUser) => {
       if (authUser) {
-        const userDocRef = doc(db, "users", authUser.uid);
-        const userSnapshot = await getDoc(userDocRef);
+        try {
+          const userDocRef = doc(db, "users", authUser.uid);
+          const userSnapshot = await getDoc(userDocRef);
 
-        if (userSnapshot.exists()) {
-          const userData = userSnapshot.data();
-          setUser({ ...authUser, ...userData });
-          setNeedsName(!userData.name);
-        } else {
-          await setDoc(userDocRef, {
-            email: authUser.email,
-            createdAt: new Date().toISOString(),
-          });
-          setNeedsName(true);
+          if (userSnapshot.exists()) {
+            const userData = userSnapshot.data();
+            setUser({ ...authUser, ...userData });
+            setNeedsName(!userData.name);
+          } else {
+            await setDoc(userDocRef, {
+              email: authUser.email,
+              createdAt: new Date().toISOString(),
+            });
+            setNeedsName(true);
+          }
+        } catch (error) {
+          console.error("Erro ao buscar ou criar usuário:", error);
         }
       } else {
         setUser(null);
@@ -35,7 +39,14 @@ const useUser = () => {
     return () => unsubscribe();
   }, []);
 
-  return { user, loading, needsName };
+  const updateUser = (newUserData) => {
+    setUser((prev) => ({ ...prev, ...newUserData }));
+    if (newUserData.name) {
+      setNeedsName(false);
+    }
+  };
+
+  return { user, loading, needsName, updateUser };
 };
 
 export default useUser;
