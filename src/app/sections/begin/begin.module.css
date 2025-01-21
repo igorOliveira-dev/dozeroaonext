@@ -22,20 +22,6 @@
   font-size: 24px;
 }
 
-@media (width < 640px) {
-  .text {
-    max-width: 345px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .paragraph {
-    font-size: 16px;
-  }
-}
-
 .glowBtn {
   width: 220px;
   height: 50px;
@@ -104,4 +90,26 @@
   text-align: center;
   transition: 0.4s;
   font-size: 18px;
+}
+
+@media (width < 640px) {
+  .text {
+    max-width: 345px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .screen {
+    justify-content: center;
+  }
+
+  .glowBtn {
+    margin-bottom: 180px;
+  }
 }
