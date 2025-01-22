@@ -1,0 +1,43 @@
+.screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.box {
+  width: 400px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+@media (width < 410px) {
+  .box {
+    width: 320px;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
