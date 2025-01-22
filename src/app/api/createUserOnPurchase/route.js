@@ -32,18 +32,25 @@ function generatePassword() {
 
 // Rota POST
 export async function POST(req) {
+  console.log("Recebendo solicitação de webhook...");
   const body = await req.json();
+
+  console.log("Payload recebido:", body);
 
   const { email } = body;
 
   if (!email) {
+    console.error("Erro: Email não fornecido no payload.");
     return new Response("Email não fornecido.", { status: 400 });
   }
 
   const password = generatePassword();
+  console.log("Senha gerada para o usuário:", password);
 
   try {
+    console.log("Tentando criar usuário no Firebase com o email:", email);
     await admin.auth().createUser({ email, password });
+    console.log("Usuário criado com sucesso no Firebase.");
 
     const mailOptions = {
       from: "Do Zero ao Next <dozeroaonext@gmail.com>",
@@ -62,17 +69,22 @@ export async function POST(req) {
       `,
     };
 
+    console.log("Enviando email para o usuário:", email);
     await transporter.sendMail(mailOptions);
+    console.log("Email enviado com sucesso para:", email);
 
     return new Response("Usuário criado e email enviado.", { status: 200 });
   } catch (error) {
     console.error("Erro ao criar usuário ou enviar email:", error);
 
     if (error.code === "auth/email-already-exists") {
+      console.warn("O email já está registrado no Firebase:", email);
       return new Response("O email já está registrado.", { status: 400 });
     } else if (error.response) {
+      console.error("Detalhes do erro no envio de email:", error.response);
       return new Response("Erro no envio de email.", { status: 500 });
     } else {
+      console.error("Erro genérico ao processar a solicitação.");
       return new Response("Erro ao processar a solicitação.", { status: 500 });
     }
   }
