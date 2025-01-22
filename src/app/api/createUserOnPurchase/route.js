@@ -5,46 +5,29 @@ import nodemailer from "nodemailer";
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert({
-      projectId:
-        process.env.FIREBASE_PROJECT_ID,
-      clientEmail:
-        process.env
-          .FIREBASE_CLIENT_EMAIL,
-      privateKey:
-        process.env.FIREBASE_PRIVATE_KEY.replace(
-          /\\n/g,
-          "\n"
-        ),
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n"),
     }),
   });
 }
 
 // Configurar o Nodemailer
-const transporter =
-  nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
 
 // Função para gerar senha aleatória
 function generatePassword() {
-  const chars =
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  return Array.from(
-    { length: 12 },
-    () =>
-      chars[
-        Math.floor(
-          Math.random() * chars.length
-        )
-      ]
-  ).join("");
+  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  return Array.from({ length: 12 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
 }
 
 // Rota POST
@@ -54,18 +37,13 @@ export async function POST(req) {
   const { email } = body;
 
   if (!email) {
-    return new Response(
-      "Email não fornecido.",
-      { status: 400 }
-    );
+    return new Response("Email não fornecido.", { status: 400 });
   }
 
   const password = generatePassword();
 
   try {
-    await admin
-      .auth()
-      .createUser({ email, password });
+    await admin.auth().createUser({ email, password });
 
     const mailOptions = {
       from: "Do Zero ao Next <dozeroaonext@gmail.com>",
@@ -84,38 +62,18 @@ export async function POST(req) {
       `,
     };
 
-    await transporter.sendMail(
-      mailOptions
-    );
+    await transporter.sendMail(mailOptions);
 
-    return new Response(
-      "Usuário criado e email enviado.",
-      { status: 200 }
-    );
+    return new Response("Usuário criado e email enviado.", { status: 200 });
   } catch (error) {
-    console.error(
-      "Erro ao criar usuário ou enviar email:",
-      error
-    );
+    console.error("Erro ao criar usuário ou enviar email:", error);
 
-    if (
-      error.code ===
-      "auth/email-already-exists"
-    ) {
-      return new Response(
-        "O email já está registrado.",
-        { status: 400 }
-      );
+    if (error.code === "auth/email-already-exists") {
+      return new Response("O email já está registrado.", { status: 400 });
     } else if (error.response) {
-      return new Response(
-        "Erro no envio de email.",
-        { status: 500 }
-      );
+      return new Response("Erro no envio de email.", { status: 500 });
     } else {
-      return new Response(
-        "Erro ao processar a solicitação.",
-        { status: 500 }
-      );
+      return new Response("Erro ao processar a solicitação.", { status: 500 });
     }
   }
 }
