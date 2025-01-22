@@ -1,5 +1,5 @@
-const admin = require("firebase-admin");
-const nodemailer = require("nodemailer");
+import admin from "firebase-admin";
+import nodemailer from "nodemailer";
 
 // Inicializar o Firebase Admin
 if (!admin.apps.length) {
@@ -19,6 +19,7 @@ if (!admin.apps.length) {
   });
 }
 
+// Configurar o Nodemailer
 const transporter =
   nodemailer.createTransport({
     service: "gmail",
@@ -31,6 +32,7 @@ const transporter =
     },
   });
 
+// Função para gerar senha aleatória
 function generatePassword() {
   const chars =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -45,24 +47,17 @@ function generatePassword() {
   ).join("");
 }
 
-export default async function handler(
-  req,
-  res
-) {
-  if (req.method !== "POST") {
-    res
-      .status(405)
-      .send("Método não permitido.");
-    return;
-  }
+// Rota POST
+export async function POST(req) {
+  const body = await req.json();
 
-  const { email } = req.body;
+  const { email } = body;
 
   if (!email) {
-    res
-      .status(400)
-      .send("Email não fornecido.");
-    return;
+    return new Response(
+      "Email não fornecido.",
+      { status: 400 }
+    );
   }
 
   const password = generatePassword();
@@ -93,11 +88,10 @@ export default async function handler(
       mailOptions
     );
 
-    res
-      .status(200)
-      .send(
-        "Usuário criado e email enviado."
-      );
+    return new Response(
+      "Usuário criado e email enviado.",
+      { status: 200 }
+    );
   } catch (error) {
     console.error(
       "Erro ao criar usuário ou enviar email:",
@@ -108,23 +102,20 @@ export default async function handler(
       error.code ===
       "auth/email-already-exists"
     ) {
-      res
-        .status(400)
-        .send(
-          "O email já está registrado."
-        );
+      return new Response(
+        "O email já está registrado.",
+        { status: 400 }
+      );
     } else if (error.response) {
-      res
-        .status(500)
-        .send(
-          "Erro no envio de email."
-        );
+      return new Response(
+        "Erro no envio de email.",
+        { status: 500 }
+      );
     } else {
-      res
-        .status(500)
-        .send(
-          "Erro ao processar a solicitação."
-        );
+      return new Response(
+        "Erro ao processar a solicitação.",
+        { status: 500 }
+      );
     }
   }
 }
