@@ -11,7 +11,7 @@ const courseModules = [
       "Introdução ao CSS",
       "Estilizando layouts básicos",
       "Layout responsivo com Flexbox e Grid",
-      "Projeto: Landing Page simples",
+      "Projeto: Landing Page",
     ],
   },
   {
@@ -89,11 +89,12 @@ const Modules = () => {
     <div className={S.screen} id="modules">
       <h1 className={S.title}>Módulos do curso</h1>
       <p className={S.paragraph}>
-        O curso conta com <strong>39 aulas principais</strong>, e <strong>estamos lançando novos conteúdos regularmente</strong>.
-        Atualmente, já chegamos ao <strong>módulo 3</strong>, e você pode aproveitar o preço promocional de <strong>R$250,00</strong>{" "}
-        por ainda não estar completo. Assim que o curso estiver completo, o valor aumentará, então não perca tempo!{" "}
-        <strong>Aulas novas são lançadas todas as segundas, quartas e sextas</strong>. Aproveite agora para garantir o curso com o
-        melhor preço!{" "}
+        O curso conta com <strong>39 aulas principais</strong>, e{" "}
+        <strong>estamos lançando novos conteúdos regularmente</strong>. Atualmente, já chegamos ao <strong>módulo 2</strong>,
+        e você pode aproveitar o preço promocional de <strong>R$250,00</strong> por ainda não estar completo. Assim que o
+        curso estiver completo, o valor aumentará, então não perca tempo!{" "}
+        <strong>Aulas novas são lançadas todas as segundas, quartas e sextas</strong>. Aproveite agora para garantir o curso
+        com o melhor preço!{" "}
         <Link href="#" className="blueLink">
           Compre já!
         </Link>

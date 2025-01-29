@@ -136,13 +136,19 @@ export default function ModulePage() {
         <div className={S.videoLinks}>
           {videos.map((video) => (
             <div key={video.id}>
-              <div onClick={() => handleVideoSelect(video.link)} className={S.videoItem}>
-                <Image src={video.image} alt={video.title} height={64} width={100} />
+              <div onClick={() => video.link && handleVideoSelect(video.link)} className={S.videoItem}>
+                <Image
+                  src={video.link ? video.image : "/videoindisponivel.webp"}
+                  alt={video.title || "Vídeo indisponível"}
+                  height={64}
+                  width={100}
+                  className="rounded"
+                />
                 <div className={S.videoInfos}>
                   <h2 className={S.videoTitle}>
                     {video.title} {watchedVideos[video.id] && <span className="text-[#00b400]">(assistido)</span>}
                   </h2>
-                  <p className={S.videoTime}>{video.time}</p>
+                  <p className={S.videoTime}>{video.link ? video.time : "Aguarde até que essa aula seja lançada!"}</p>
                 </div>
               </div>
             </div>

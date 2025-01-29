@@ -54,6 +54,12 @@
 
 .videoTitle {
   font-size: 18px;
+  font-weight: bold;
+}
+
+.videoTime {
+  font-size: 14px;
+  color: #ccc;
 }
 
 @media (max-width: 1050px) {
@@ -80,11 +86,8 @@
 
 .activeVideoTitle {
   font-weight: bold;
-  font-size: 24px;
-}
-
-.activeVideoDesc {
-  padding-block: 10px;
+  font-size: 28px;
+  margin-block: 10px;
 }
 
 .watched {
