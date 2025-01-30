@@ -7,10 +7,34 @@ import useUser from "./hooks/useUser";
 import Loading from "../components/Loading";
 
 const carouselData = [
-  { image: "/module1.webp", alt: "Módulo 1: HTML e CSS", module: "MÓDULO 1", title: "HTML e CSS", link: "dashboard/modules/module1" },
-  { image: "/module2.webp", alt: "Módulo 2: JavaScript", module: "MÓDULO 2", title: "JavaScript", link: "dashboard/modules/module2" },
-  { image: "/module3.webp", alt: "Módulo 3: React.js", module: "MÓDULO 3", title: "React.js", link: "dashboard/modules/module3" },
-  { image: "/module4.webp", alt: "Módulo 4: Next.js", module: "MÓDULO 4", title: "Next.js", link: "dashboard/modules/module4" },
+  {
+    image: "/module1.webp",
+    alt: "Módulo 1: HTML e CSS",
+    module: "MÓDULO 1",
+    title: "HTML e CSS",
+    link: "dashboard/modules/module1",
+  },
+  {
+    image: "/module2.webp",
+    alt: "Módulo 2: JavaScript",
+    module: "MÓDULO 2",
+    title: "JavaScript",
+    link: "dashboard/modules/module2",
+  },
+  {
+    image: "/module3.webp",
+    alt: "Módulo 3: React.js",
+    module: "MÓDULO 3",
+    title: "React.js",
+    link: "dashboard/modules/module3",
+  },
+  {
+    image: "/module4.webp",
+    alt: "Módulo 4: Next.js",
+    module: "MÓDULO 4",
+    title: "Next.js",
+    link: "dashboard/modules/module4",
+  },
   {
     image: "/module5.webp",
     alt: "Módulo 5: Integração com APIs",
@@ -20,9 +44,9 @@ const carouselData = [
   },
   {
     image: "/module6.webp",
-    alt: "Módulo 6: Projetos com IA",
+    alt: "Módulo 6: IA com ChatGPT",
     module: "MÓDULO 6",
-    title: "Projetos com IA",
+    title: "IA com ChatGPT",
     link: "dashboard/modules/module6",
   },
   {
