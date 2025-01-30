@@ -58,7 +58,7 @@ const courseModules = [
   {
     title: "IA com ChatGPT",
     lessons: [
-      "Introdução ao ChatGPT e modelos de linguagem",
+      "Introdução ao ChatGPT",
       "Configuração da API OpenAI",
       "Criando interações dinâmicas com IA",
       "Projeto: Assistente virtual com ChatGPT",
