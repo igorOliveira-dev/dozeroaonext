@@ -41,7 +41,6 @@ export default function ModulePage() {
           setModuleName(moduleData.data().name || "Módulo Desconhecido");
         }
 
-        // Buscar vídeos assistidos
         const watchedRef = collection(db, "users", user.uid, "watchedVideos");
         const watchedSnapshot = await getDocs(watchedRef);
         const watchedData = {};
@@ -98,7 +97,6 @@ export default function ModulePage() {
       ) {
         progressReported.current[selectedVideoInfo.id] = true;
 
-        // Marcar vídeo como assistido no banco de dados
         const watchedRef = doc(db, "users", user.uid, "watchedVideos", selectedVideoInfo.id);
         setDoc(watchedRef, { watchedAt: new Date().toISOString() })
           .then(() => {
