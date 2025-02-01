@@ -94,7 +94,6 @@ const Dashboard = () => {
       try {
         const watchedRef = collection(db, "users", user.uid, "watchedVideos");
         const snapshot = await getDocs(watchedRef);
-        // Filtra apenas os documentos que iniciam com "video"
         const videos = snapshot.docs.map((doc) => doc.id).filter((id) => id.startsWith("video"));
         setWatchedVideos(videos);
       } catch (error) {
