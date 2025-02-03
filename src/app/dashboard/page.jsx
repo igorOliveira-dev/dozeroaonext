@@ -8,6 +8,11 @@ import Loading from "../components/Loading";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
+// Importando os ícones desejados
+import { FaDiscord } from "react-icons/fa";
+import { GiDiploma } from "react-icons/gi"; // Novo ícone de certificado
+import Link from "next/link";
+
 const carouselData = [
   {
     image: "/module1.webp",
@@ -110,11 +115,27 @@ const Dashboard = () => {
 
   const firstName = user?.name?.split(" ")[0] || "Aluno";
 
+  const certificationClick = () => {
+    alert("Você ainda não completou o curso, assista todas as aulas e volte aqui!");
+  };
+
   return (
-    <div>
-      <h2 className={S.subtitle}>Bem-vindo ao seu curso, {firstName}!</h2>
-      <h1 className={`gradient-text ${S.title}`}>Do Zero ao Next</h1>
+    <div className={S.screen}>
+      <div>
+        <h2 className={S.subtitle}>Bem-vindo ao seu curso, {firstName}!</h2>
+        <h1 className={`gradient-text ${S.title}`}>Do Zero ao Next</h1>
+      </div>
       <Carousel data={carouselData} watchedVideos={watchedVideos} />
+      <div className={S.linksArea}>
+        <a href="/discord" target="_blank" className={S.discord}>
+          <FaDiscord style={{ marginRight: "8px", fontSize: "25px" }} />
+          Servidor do Discord
+        </a>
+        <button onClick={certificationClick} className={S.certification}>
+          <GiDiploma style={{ marginRight: "8px", fontSize: "25px" }} />
+          Receber certificado
+        </button>
+      </div>
     </div>
   );
 };
