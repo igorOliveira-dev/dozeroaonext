@@ -9,12 +9,12 @@ const faqData = [
   },
   {
     question: "Qual é o preço do curso?",
-    answer: "O investimento necessário para o curso tem o preço promocional atualmente de R$250,00",
+    answer: "O curso atualmente está com um preço promocional de lançamento de R$300,00",
   },
   {
     question: "Quanto tempo dura o curso?",
     answer:
-      "O curso terá 38 aulas com duração de 15 à 20 minutos, o curso ainda não tem todas as aulas lançadas (estamos no módulo 3) mas todas as segundas, quartas e sextas são postadas novas aulas",
+      "O curso terá 39 aulas com duração de 15 à 20 minutos (vídeos de projetos podem durar uma hora ou mais), o curso ainda não tem todas as aulas lançadas mas todas as segundas, quartas e sextas são postadas novas aulas",
   },
   {
     question: "Quais são as garantias oferecidas?",
@@ -31,11 +31,12 @@ const faqData = [
   },
   {
     question: "Como posso acessar o conteúdo do curso?",
-    answer: "Todo o conteúdo estará disponível em uma plataforma online, protegida com autenticação aos assinantes do curso.",
+    answer:
+      "Todo o conteúdo estará disponível em uma plataforma online, protegida com autenticação aos assinantes do curso. Quando você finalizar a compra você receberá por email o link da plataforma e as suas credenciais de acesso.",
   },
   {
     question: "Quantas aulas o curso possui?",
-    answer: "O curso possui 38 aulas divididas em módulos bem definidos.",
+    answer: "O curso possui 39 aulas divididas em módulos bem definidos.",
   },
   {
     question: "Posso acessar as aulas pelo celular?",
@@ -43,7 +44,8 @@ const faqData = [
   },
   {
     question: "O que acontece se eu tiver problemas técnicos durante o curso?",
-    answer: "Oferecemos suporte técnico para resolver qualquer problema que você encontrar na plataforma, basta nos enviar um e-mail.",
+    answer:
+      "Oferecemos suporte técnico para resolver qualquer problema que você encontrar na plataforma, basta nos enviar um e-mail.",
   },
 ];
 
